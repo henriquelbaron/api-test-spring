@@ -12,8 +12,8 @@ import java.io.Serializable;
 @Entity(name = "pais")
 public class PaisVO  implements Serializable{
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "pais_generator")
-	@SequenceGenerator(name="pais_generator", sequenceName = "seq_pais", allocationSize=1)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@SequenceGenerator(name="pais_generator", sequenceName = "seq_pais", allocationSize=1)
 	private Long id;
 	private String nome;
 	private String sigla;

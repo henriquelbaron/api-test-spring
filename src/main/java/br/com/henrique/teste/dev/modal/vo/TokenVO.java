@@ -13,8 +13,8 @@ import java.time.LocalDateTime;
 public class TokenVO {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "token_generator")
-	@SequenceGenerator(name="token_generator", sequenceName = "seq_token", allocationSize=1)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+//	@SequenceGenerator(name="token_generator", sequenceName = "seq_token", allocationSize=1)
 	private Long id;
 	private String token;
 	private String login;
